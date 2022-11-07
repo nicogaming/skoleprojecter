@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+        <label for="navn">Navn</label>
+        <input type="text" id="navn" name="navn"><br>
+        <label for="Password">Password</label>
+        <input type="text" name="Password" id="Password"><br>
+        <button onclick="login()">login</button>
+</body>
+<script>
+function login(){
+    var name = document.getElementById("navn");
+    var password = document.getElementById("Password");
+    if(name == "Nico" && password == "cool2002"){
+       window.location.href = "stuff.html" 
+    }
+    else{
+        alert.call="wrong password"
+    }
+}</script>
+</html>
